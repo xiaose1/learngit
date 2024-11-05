@@ -1,0 +1,46 @@
+:root {
+	--color-primary-white: #fafafa;
+	--color-primary-blue-green: #16baaa;
+	--color-primary-green: #16b777;
+	--color-primary-blue: #1e9fff;
+	--color-auxiliary-red: #ff5722;
+	--color-auxiliary-yellow: #ffb800;
+	--color-auxiliary-green: #16b777;
+	--color-auxiliary-blue: #31bdec;
+	--color-deep-1: #2f363c;
+	--color-deep-2: #23292e;
+}
+
+body {
+	padding: 0;
+	margin: 0;
+	background-color: var(--el-color-info-light-9);
+}
+
+.vertical-center {
+	display: flex;
+	align-items: center;
+}
+
+.horizontally-center {
+	display: flex;
+	justify-content: center;
+}
+
+.flex-grow {
+	flex-grow: 1;
+}
+
+.page-header {
+	padding: 0 0 0 10px;
+	background: linear-gradient(to right, var(--color-primary-green), rgba(244, 244, 245, 0) 60%);
+	border-radius: 10px;
+}
+
+.page-header .page-header-title {
+	margin: 5px 0;
+	padding-left: 5px;
+	font-weight: bold;
+	color: aliceblue;
+	border-left: 5px solid aliceblue ;
+}

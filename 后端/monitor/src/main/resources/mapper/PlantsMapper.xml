@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.lin037.monitor.mapper.PlantsMapper">
+
+    <resultMap id="BaseResultMap" type="cn.lin037.monitor.domain.Plants">
+            <id property="plantId" column="plant_id" jdbcType="INTEGER"/>
+            <result property="plantName" column="plant_name" jdbcType="VARCHAR"/>
+            <result property="plantImageUri" column="plant_image_uri" jdbcType="VARCHAR"/>
+            <result property="plantInformation" column="plant_information" jdbcType="VARCHAR"/>
+            <result property="plantTemperature" column="plant_temperature" jdbcType="DECIMAL"/>
+            <result property="plantHumidity" column="plant_humidity" jdbcType="DECIMAL"/>
+            <result property="plantCreateTime" column="plant_create_time" jdbcType="TIMESTAMP"/>
+            <result property="plantUpdateTime" column="plant_update_time" jdbcType="TIMESTAMP"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        plant_id,plant_name,plant_image_uri,
+        plant_information,plant_temperature,plant_humidity,
+        plant_create_time,plant_update_time
+    </sql>
+</mapper>
